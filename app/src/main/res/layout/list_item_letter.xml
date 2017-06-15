@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="时间"
+        android:includeFontPadding="false"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:background="@drawable/shape_letter"
+        android:minHeight="64dp"
+        android:includeFontPadding="false"
+        android:padding="10dp"
+        android:textColor="@color/theme_black"
+        android:textSize="15sp" />
+
+</LinearLayout>

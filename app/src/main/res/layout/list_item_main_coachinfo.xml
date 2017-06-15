@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.ausu.erpapp.view.CloudImageView
+            android:id="@+id/avatar_coach"
+            android:layout_width="@dimen/head_width"
+            android:layout_height="@dimen/head_width"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="@dimen/margin_standard"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar_coach"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/coach_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="张教练"
+                    android:textColor="@color/theme_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/coachYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/avatar_coach"
+                    android:includeFontPadding="false"
+                    android:text="年龄：40    教龄：5"
+                    android:textColor="@color/theme_light_black"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/coachInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/avatar_coach"
+                android:includeFontPadding="false"
+                android:text="年龄：40    教龄：5"
+                android:textColor="@color/theme_light_black"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eeeeee" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/tabOne"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/firstView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="科目一"-->
+                <!--android:textColor="@color/themeColor" />-->
+
+            <!--<View-->
+                <!--android:id="@+id/firstLine"-->
+                <!--android:layout_width="64dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_gravity="bottom|center_horizontal"-->
+                <!--android:background="@color/themeColor" />-->
+        <!--</FrameLayout>-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/tabTwo"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/fourView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="科目四"-->
+                <!--android:textColor="#555555" />-->
+
+            <!--<View-->
+                <!--android:id="@+id/fourLine"-->
+                <!--android:layout_width="64dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_gravity="bottom|center_horizontal"-->
+                <!--android:background="@color/themeColor" />-->
+        <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        app:tabIndicatorColor="@color/themeColor"
+        app:tabSelectedTextColor="@color/themeColor"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabTextColor="@color/theme_black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:hint="手机号"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/text_large"
+        app:met_baseColor="@color/themeColor"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@color/themeColor"
+        app:met_textColor="@color/theme_black"
+        app:met_textColorHint="@color/progress_bgc" />
+    <!--app:met_iconLeft="@mipmap/abc_ic_clear_search_api_disabled_holo_light"-->
+    <FrameLayout
+        android:id="@+id/codeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_small">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/identifyingCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/ic_code"
+            android:hint="原始密码"
+            android:includeFontPadding="false"
+            android:password="true"
+            android:textSize="@dimen/text_large"
+            app:met_baseColor="@color/themeColor"
+            app:met_iconPadding="0dp"
+            app:met_primaryColor="@color/themeColor"
+            app:met_textColor="@color/theme_black"
+            app:met_textColorHint="@color/progress_bgc" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/getCode"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginBottom="@dimen/margin_standard"-->
+        <!--android:layout_marginRight="@dimen/margin_large"-->
+        <!--android:layout_marginTop="@dimen/margin_small"-->
+        <!--android:gravity="center"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:text="@string/getCode"-->
+        <!--android:textColor="@color/themeColor"-->
+        <!--android:textSize="@dimen/text_standard" />-->
+    </FrameLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableLeft="@mipmap/ic_password"
+        android:hint="输入新密码"
+        android:includeFontPadding="false"
+        android:password="true"
+        android:textSize="@dimen/text_large"
+        app:met_baseColor="@color/themeColor"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@color/themeColor"
+        app:met_textColor="@color/theme_black"
+        app:met_textColorHint="@color/progress_bgc" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableLeft="@mipmap/ic_password"
+        android:hint="确认密码"
+        android:includeFontPadding="false"
+        android:password="true"
+        android:textSize="@dimen/text_large"
+        app:met_baseColor="@color/themeColor"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@color/themeColor"
+        app:met_textColor="@color/theme_black"
+        app:met_textColorHint="@color/progress_bgc" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/contain_edit"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:background="@drawable/selector_sure_btn"
+        android:focusable="false"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/sure_btn"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/text_large" />
+
+</LinearLayout>

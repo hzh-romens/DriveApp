@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_large"
+        android:background="@color/themeColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/text_title"
+            android:includeFontPadding="false"
+            android:id="@+id/title"
+            android:text="@string/singup"/>
+        <ImageView
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:src="@mipmap/icon_back"
+            android:id="@+id/btn_back"
+            android:scaleType="center"
+            android:layout_marginRight="@dimen/margin_standard"/>
+    </FrameLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        app:met_baseColor="@color/md_black_1000"
+        app:met_iconLeft="@mipmap/abc_ic_clear_search_api_disabled_holo_light"
+        app:met_iconPadding="0dp"
+        android:includeFontPadding="false"
+        app:met_primaryColor="@color/md_black_1000"
+        app:met_textColorHint="@color/md_grey_400" />
+
+</LinearLayout>

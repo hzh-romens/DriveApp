@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.ausu.erpapp.view.CloudImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/carIcon"
+        android:layout_gravity="left"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="96dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="96dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海淀驾校"
+                android:includeFontPadding="false"
+                android:id="@+id/driverName"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/text_large"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暑假特惠"
+                android:includeFontPadding="false"
+                android:id="@+id/adress"
+                android:textSize="@dimen/text_standard"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:text="已报名人数"
+                android:includeFontPadding="false"
+                android:layout_gravity="right|bottom"
+                android:id="@+id/enroll"
+                />
+    </FrameLayout>
+
+</LinearLayout>

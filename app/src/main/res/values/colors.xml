@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hangout_green">#0f9d58</color>
+    <color name="theme_primary">#ff009688</color>
+    <!--<color name="theme_primary">#96bd2c</color>-->
+    <color name="theme_primary_dark">#ff00897b</color>
+    <color name="theme_primary_light">#ff80cbc4</color>
+
+    <color name="theme_accent_1">#ff009688</color>
+    <color name="theme_accent_1_light">#ff80cbc4</color>
+
+    <color name="theme_accent_2">#ff009688</color>
+
+
+    <color name="sales_item_background">#ececec</color>
+
+    <color name="text_primary">#ff009688</color>
+
+    <color name="btn_primary">#ff009688</color>
+    <color name="btn_primary_light">#ffe5e5e5</color>
+    <color name="btn_primary_text">@color/text_primary</color>
+
+    <!--<color name="text_primary">#0f9d58</color>-->
+
+
+    <color name="theme_title">#ff333333</color>
+    <color name="theme_sub_title">#ff666666</color>
+    <color name="line_color">#99cccccc</color>
+    <color name="order_statu_color">#ff96bd2c</color>
+    <color name="order_money_color">#ffff7407</color>
+    <color name="order_btn_bg">#fffa5939</color>
+    <color name="text_color">#ff212121</color>
+
+
+    <color name="title_background_grey">#f9f9f9</color>
+    <color name="accouns_color">#66cc00</color>
+    <color name="reset_btn_bg">#f38202</color>
+    <color name="btntextcolor">#66cc00</color>
+    <!--dialog中按钮字体颜色 -->
+    <color name="second_title">#f0f0f0</color>
+    <color name="themecolor">#96bd2c</color>
+    <color name="titlecolor">#333333</color>
+    <color name="new_grey">#f6f6f6</color>
+
+
+    <color name="font_emergency">#ffb0120a</color>
+    <color name="progress_bgc">#cccccc</color>
+
+    <color name="medicare_card">@color/md_blue_300</color>
+    <color name="medicare_card_dark">#ff549cdd</color>
+    <color name="medicare_card_avatar">#ff549cdd</color>
+    <color name="member_btn">#a9a9a9</color>
+
+    <color name="transparents">#00000000</color>
+
+
+    <color name="medicine_favorites">@color/md_red_500</color>
+    <color name="themeColor">#ff7f00</color>
+    <color name="theme_black">#333333</color>
+    <color name="theme_light_black">#666666</color>
+    <color name="light_black">#999999</color>
+    <color name="theme_text_price">#ff9226</color>
+    <color name="theme_bgc_grey">#eeeeee</color>
+    <color name="title_clolr">#976100</color>
+
+
+    <color name="refresh_progress_1">@color/md_green_500</color>
+    <color name="refresh_progress_2">@color/md_red_500</color>
+    <color name="refresh_progress_3">@color/md_blue_500</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="oval">#bbbbbb</color>
+    <color name="correct">#21C064</color>
+    <color name="wrong">#E75349</color>
+
+</resources>

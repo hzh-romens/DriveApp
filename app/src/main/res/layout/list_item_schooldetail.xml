@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.ausu.erpapp.view.CloudImageView
+            android:id="@+id/carIcon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="left"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="96dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/driverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海淀驾校"
+                android:includeFontPadding="false"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99%好评"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/text_standard" />
+
+            <TextView
+                android:id="@+id/enroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计报名人数"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/text_standard" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="center"
+            android:src="@mipmap/btn_right" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#eeeeee" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:layout_marginRight="@dimen/margin_large"
+            android:drawableLeft="@mipmap/icon_adress"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="天津市大港区古林街道10号" />
+
+        <ImageView
+            android:id="@+id/calling"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="@mipmap/icon_calling" />
+    </FrameLayout>
+
+</LinearLayout>

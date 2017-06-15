@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="44dp"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:layout_marginRight="@dimen/margin_standard"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="单选 驾驶机动车在道路上违反道路交通安全法的行为属于什么行为？" />
+
+                <com.example.ausu.erpapp.view.CloudImageView
+                    android:id="@+id/image_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    fresco:failureImage="@mipmap/ic_launcher" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/selectedA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:button="@mipmap/ic_unselected_a"
+                android:includeFontPadding="false"
+                android:text="选项A"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/text_large" />
+
+            <CheckBox
+                android:id="@+id/selectedB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:button="@mipmap/ic_unselected_b"
+                android:includeFontPadding="false"
+                android:text="选项B"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/text_large" />
+
+            <CheckBox
+                android:id="@+id/selectedC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:button="@mipmap/ic_unselected_c"
+                android:includeFontPadding="false"
+                android:text="选项C"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/text_large" />
+
+            <CheckBox
+                android:id="@+id/selectedD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:button="@mipmap/ic_unselected_d"
+                android:includeFontPadding="false"
+                android:text="选项D"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/text_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standard">
+
+                <TextView
+                    android:id="@+id/sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/contain_edit"
+                    android:layout_marginLeft="@dimen/margin_standard"
+                    android:layout_marginRight="@dimen/margin_standard"
+                    android:layout_marginTop="@dimen/margin_standard"
+                    android:background="@drawable/selector_sure_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/sure_btn"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/text_large" />
+
+                <LinearLayout
+                    android:id="@+id/answerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sure"
+                    android:layout_margin="@dimen/margin_standard"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eeeeee" />
+
+                    <TextView
+                        android:id="@+id/answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:includeFontPadding="false"
+                        android:text="正确答案是B"
+                        android:textColor="@color/theme_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:includeFontPadding="false"
+                        android:text="解析"
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/analysis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:includeFontPadding="false"
+                        android:text="答案详解"
+                        android:textColor="@color/theme_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee">
+
+            <TextView
+                android:id="@+id/previousPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/margin_standard"
+                android:background="@drawable/shape_page_previous"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="上一题"
+                android:textColor="#aaaaaa"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/pageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="1/30"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nextPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_standard"
+                android:background="@drawable/shape_page_next"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="下一题"
+                android:textColor="@color/themeColor"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/layout_loading" />
+
+    </RelativeLayout>
+</ScrollView>

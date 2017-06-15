@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/text_radius_shape"
+            android:drawableLeft="@mipmap/ic_searchs"
+            android:drawablePadding="@dimen/margin_small"
+            android:gravity="center_vertical"
+            android:hint="输入驾校名称"
+            android:paddingLeft="8dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/margin_standard" />`
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center"
+            android:text="取消"
+            android:includeFontPadding="false"
+            android:textColor="#976100"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/historyListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayout" />
+
+    <ListView
+        android:id="@+id/searchListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayout"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.ausu.erpapp.view.CloudImageView
+            android:id="@+id/carIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/margin_standard"
+            fresco:failureImage="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="84dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/schoolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海淀驾校"
+                android:includeFontPadding="false"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海淀大道"
+                android:includeFontPadding="false"
+                android:textColor="@color/theme_light_black"
+                android:textSize="@dimen/text_standard" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:text="30km"
+            android:includeFontPadding="false"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="84dp"
+            android:visibility="visible"
+            android:background="#eeeeee" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_large"
+        android:background="@color/themeColor">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="评价"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_white_1000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:gravity="center"
+            android:text="提交"
+            android:includeFontPadding="false"
+            android:textColor="@color/md_white_1000"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/md_white_1000"
+        android:gravity="left|top"
+        android:hint="请输入您此次练车的评价"
+        android:includeFontPadding="false"
+        android:padding="@dimen/margin_standard"
+        android:textColorHint="#999999"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eeeeee" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/md_white_1000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:gravity="center"
+            android:text="教练态度"
+            android:includeFontPadding="false"
+            android:textColor="@color/theme_black" />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/attitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center_vertical"
+            hedgehog:clickable="true"
+            hedgehog:halfstart="true"
+            hedgehog:starCount="5"
+            hedgehog:starEmpty="@mipmap/star_empty"
+            hedgehog:starFill="@mipmap/star_full"
+            hedgehog:starHalf="@mipmap/star_half"
+            hedgehog:starImageHeight="36dp"
+            hedgehog:starImagePadding="20dp"
+            hedgehog:starImageWidth="36dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/md_white_1000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:gravity="center"
+            android:text="教练能力"
+            android:includeFontPadding="false"
+            android:textColor="@color/theme_black" />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/ability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center_vertical"
+            hedgehog:clickable="true"
+            hedgehog:halfstart="true"
+            hedgehog:starCount="5"
+            hedgehog:starEmpty="@mipmap/star_empty"
+            hedgehog:starFill="@mipmap/star_full"
+            hedgehog:starHalf="@mipmap/star_half"
+            hedgehog:starImageHeight="36dp"
+            hedgehog:starImagePadding="20dp"
+            hedgehog:starImageWidth="36dp" />
+    </FrameLayout>
+</LinearLayout>

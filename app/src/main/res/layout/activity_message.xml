@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_large"
+        android:layout_gravity="top"
+        android:background="@color/themeColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="**教练"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_max" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:scaleType="center"
+            android:src="@mipmap/btn_back_white" />
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="48dp"
+            android:background="#f6f6f6"
+            android:drawableLeft="@mipmap/ic_fornum_edit"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:hint="输入新信息"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/margin_standard"
+            android:textColorHint="@color/light_black"
+            android:typeface="normal" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="发送" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:drawableLeft="@mipmap/ic_user_oning"
+        android:drawablePadding="4dp"
+        android:drawableRight="@mipmap/btn_right"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:text="正在进行"
+        android:textColor="@color/theme_black"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        android:background="@drawable/shape_appointment"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/appointmentTime"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="预约时间"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_small"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/btn_right"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="明日9：00-12:00"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddddd" />
+
+        <FrameLayout
+            android:id="@+id/appointmentItem"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="练习项目"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_small"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="无"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dddddd" />
+
+        <FrameLayout
+            android:id="@+id/appointmentItem2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="教练"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/coachName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_small"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/btn_right"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="张三"
+                android:textColor="@color/theme_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_standard"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard">
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_cancle"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="取消预约"
+            android:textColor="@color/theme_light_black"
+            android:textSize="@dimen/text_standard" />
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/sure"
+            android:background="@drawable/shape_sure"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="练习教练"
+            android:textColor="#47b4ff"
+            android:textSize="@dimen/text_standard" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_sure"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="完成"
+            android:textColor="#47b4ff"
+            android:textSize="@dimen/text_standard" />
+    </RelativeLayout>
+
+</LinearLayout>

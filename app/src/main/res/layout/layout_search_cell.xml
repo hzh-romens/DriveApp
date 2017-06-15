@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+
+    <TextView
+        android:id="@+id/qrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_adress_white"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="正在定位.."
+        android:textColor="@color/md_white_1000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/text_radius_shape"
+        android:drawableRight="@mipmap/ic_search_light"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="输入驾校名称"
+        android:textColor="@color/light_black" />`
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_message_white" />
+
+</FrameLayout>

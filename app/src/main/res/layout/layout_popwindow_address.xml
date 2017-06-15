@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.example.ausu.erpapp.city.widget.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <com.example.ausu.erpapp.city.widget.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <com.example.ausu.erpapp.city.widget.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#E9E9E9">
+
+        <TextView
+            android:id="@+id/cancel_action"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="52dp"
+            android:gravity="center"
+            android:text="取消"
+            android:includeFontPadding="false"
+            android:background="@drawable/shape_cancle"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sure_action"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:text="确定"
+            android:includeFontPadding="false"
+            android:background="@drawable/shape_cancle"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</LinearLayout>

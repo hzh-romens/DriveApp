@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparents"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="驾照类型"
+            android:includeFontPadding="false"
+            android:textColor="@color/theme_black"
+            android:textSize="16sp" />
+
+        <com.example.ausu.erpapp.view.FlowLayout
+            android:id="@+id/flowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:minHeight="72dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="练车区域"
+            android:includeFontPadding="false"
+            android:textColor="@color/theme_black"
+            android:textSize="16sp" />
+
+        <com.example.ausu.erpapp.view.FlowLayout
+            android:id="@+id/flowLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:minHeight="72dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="#eeeeee">
+
+            <TextView
+                android:id="@+id/reset"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/selector_reset"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:text="重置"
+                android:includeFontPadding="false"
+                android:textColor="@drawable/text_filter_selector"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sure"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/selector_reset"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:text="确定"
+                android:includeFontPadding="false"
+                android:textColor="@drawable/text_filter_selector"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

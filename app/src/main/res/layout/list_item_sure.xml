@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_large"
+        android:layout_below="@+id/contain_edit"
+        android:layout_margin="@dimen/margin_standard"
+        android:background="@drawable/selector_sure_btn"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="确定"
+        android:includeFontPadding="false"
+        android:textColor="@color/md_white_1000"
+        android:textSize="16sp" />
+</LinearLayout>
